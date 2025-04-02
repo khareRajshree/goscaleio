@@ -18,7 +18,7 @@ on:  # yamllint disable-line rule:truthy
     types: [release-go-libs]
 jobs:
   csm-release:
-    uses: dell/common-github-actions/.github/workflows/csm-release-libs.yaml@main
+    uses: khareRajshree/common-github-actions/.github/workflows/csm-release-libs.yaml@main
     name: Release Go Client Libraries
     with:
       version: "${{ github.event.inputs.option || 'minor' }}"
